@@ -6,6 +6,11 @@ export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
+  const [showModal, setShowModal] = useState(false);
+
+  const toggle = () => {
+    setShowModal(!showModal);
+  };
 
   useEffect(() => {
     const storedCartItems = localStorage.getItem("cartItems");
@@ -80,6 +85,8 @@ export const CartProvider = ({ children }) => {
         removeFromCart,
         clearCart,
         getCartTotal,
+        showModal,
+        toggle,
       }}
     >
       {children}
