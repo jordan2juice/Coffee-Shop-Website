@@ -32,7 +32,7 @@ export default function Products() {
 
   return (
     <div>
-      <section className="flex flex-col justify-center">
+      <section className=" p-5 m-1 flex flex-wrap justify-center gap-5">
         {products.map((product) => (
           <ProductCard key={product._id} product={product} />
         ))}

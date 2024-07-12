@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar";
 import HeroSection from "./components/HeroSection";
 import AboutUs from "./components/AboutUs";
 import Products from "./components/Products";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <AboutUs />
       <Products />
       <WakeUp />
+      <Footer />
     </main>
   );
 }

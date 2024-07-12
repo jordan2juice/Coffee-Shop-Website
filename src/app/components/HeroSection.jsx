@@ -1,12 +1,17 @@
-'use client';
+"use client";
 
-import React from 'react'
+import React from "react";
 
 export default function HeroSection() {
   return (
-    <div className=" w-full h-96 bg-[#803D3B]">
-      <h1>Hero Section</h1>
-      <p>Hero Section</p>
+    <div className="heroSection">
+      <h1 className="heroTitle">
+        Fuel Your Day, Every Day with The Daily Grind
+      </h1>
+      <p>
+        Welcome to The Daily Grind, where every cup fuels your day with passion
+        and precision.
+      </p>
     </div>
   );
 }

@@ -1,0 +1,30 @@
+.about {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #fefaf6;
+  transition: transform 0.3s ease-in-out;
+}
+
+.storeFront {
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  width: 100%;
+  height: auto;
+  // //   max-width: 220vh;
+  //   max-height: 220vw;
+  object-fit: cover;
+}
+
+.aboutTitle {
+  color: #322c2b;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.about p {
+  color: #322c2b;
+  margin-bottom: 10px;
+}

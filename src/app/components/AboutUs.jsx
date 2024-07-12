@@ -7,7 +7,7 @@ export default function AboutUs() {
   return (
     <div className="about">
       <section>
-        <h1>About Us</h1>
+        <h1 className="aboutTitle">About Us</h1>
         <p>
           Welcome to The Daily Grind, your cozy neighborhood coffee shop where
           exceptional coffee meets warm hospitality. Nestled in the heart of our
@@ -22,12 +22,7 @@ export default function AboutUs() {
         </p>
       </section>
       <section>
-        <Image
-          src={"/images/Store.png"}
-          width={300}
-          height={300}
-          alt="store front"
-        />
+        <img className="storeFront" src="/images/Store.png" alt="store front" />
       </section>
     </div>
   );

@@ -2,9 +2,10 @@
 
 import React, { useContext, useState } from "react";
 import { CartContext } from "../context/cart";
+import CheckoutForm from "./CheckOutForm";
 
 export default function Cart() {
-  const [checkoutComplete, setCheckoutComplete] = useState(false);
+  const [checkoutComplete, setCheckoutComplete] = useState("shopping");
 
   const {
     cartItems,
@@ -15,7 +16,7 @@ export default function Cart() {
     showModal,
     toggle,
   } = useContext(CartContext);
-  if (!checkoutComplete) {
+  if (checkoutComplete === "shopping") {
     return (
       showModal && (
         <div className="flex-col flex items-center fixed inset-0 left-1/4 bg-white dark:bg-black gap-8  p-10  text-black dark:text-white font-normal uppercase text-sm">
@@ -78,7 +79,7 @@ export default function Cart() {
               <button
                 className="px-4 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded hover:bg-gray-700 focus:outline-none focus:bg-gray-700"
                 onClick={() => {
-                  setCheckoutComplete(true);
+                  setCheckoutComplete("checking out");
                   clearCart();
                 }}
               >
@@ -91,13 +92,23 @@ export default function Cart() {
         </div>
       )
     );
+  } else if (checkoutComplete === "checking out") {
+    return (
+      <div>
+        <CheckoutForm
+          setCheckoutComplete={setCheckoutComplete}
+          clearCart={clearCart}
+        />
+      </div>
+    );
   } else {
     return (
       <div className="flex-col flex items-center bg-white gap-8 p-10 text-black text-sm">
         <h1 className="text-2xl font-bold">Checkout Complete</h1>
         <button
           onClick={() => {
-            setCheckoutComplete(false);
+            toggle();
+            setCheckoutComplete("shopping");
           }}
         >
           Close
