@@ -13,7 +13,6 @@ export default function CheckoutForm({ setCheckoutComplete, clearCart }) {
           <button
             className="px-4 py-2 bg-gray-800 text-white text-xs font-bold uppercase rounded hover:bg-gray-700 focus:outline-none focus:bg-gray-700"
             onClick={toggle}
-        
           >
             Close
           </button>
@@ -22,9 +21,10 @@ export default function CheckoutForm({ setCheckoutComplete, clearCart }) {
           <form className="flex flex-col">
             <label htmlFor="name">
               Name:
-              <input type="text" id="name" name="name" required />
+              <input  
+               type="text" id="name" name="name" required />
             </label>
-            <label htmlFor="phone">
+            <label className="flex flex-col" htmlFor="phone">
               Phone:
               <input type="text" id="phone" name="phone" required />
             </label>
