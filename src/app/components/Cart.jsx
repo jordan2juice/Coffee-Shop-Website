@@ -108,7 +108,8 @@ export default function Cart() {
         <button
           onClick={() => {
             toggle();
-            setCheckoutComplete("shopping");
+            setCheckoutComplete('shopping');
+
           }}
         >
           Close

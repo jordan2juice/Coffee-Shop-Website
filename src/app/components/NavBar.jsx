@@ -13,7 +13,7 @@ export default function NavBar() {
       <header className="text-gray-600 body-font">
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <Image src={"/images/Coffee-beans.svg"} height={30} width={30} />
+            <Image alt="coffee bean"  src={"/images/Coffee-beans.svg"} height={30} width={30} />
             <span className="ml-3 text-xl">The Daily Grind</span>
           </a>
           <div className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">

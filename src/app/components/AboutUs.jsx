@@ -13,7 +13,7 @@ export default function AboutUs() {
           exceptional coffee meets warm hospitality. Nestled in the heart of our
           community, we pride ourselves on serving meticulously sourced,
           ethically grown Arabica beans brewed to perfection by our skilled
-          baristas. Whether you're enjoying a smooth breakfast blend, a robust
+          baristas. Whether you are enjoying a smooth breakfast blend, a robust
           dark roast, or a specialty latte, each cup is crafted with passion and
           care. Join us for fresh baked goods, a welcoming atmosphere, and a
           place where friends and neighbors come together to relax and connect.
