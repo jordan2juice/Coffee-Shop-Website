@@ -2,7 +2,6 @@
 
 import React, { useContext, useState } from "react";
 import { CartContext } from "../context/cart";
-import { Button, Col, Form, FormLabel, FormText, Row } from "react-bootstrap";
 
 export default function CheckoutForm({ setCheckoutComplete, clearCart }) {
   const { showModal, toggle } = useContext(CartContext);
